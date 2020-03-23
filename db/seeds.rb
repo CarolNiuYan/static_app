@@ -4,4 +4,16 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.first
+
+class AddInitialProducts < ActiveRecord::Migration[5.1]
+  def up
+    5.times do |i|
+      User.create(name: "Test User ##{i}", email: "dummyuser#{i}@example.com", password: "monkey#{i}", password_confirmation: "monkey#{i}")
+    end
+  end
+
+  def down
+    User.delete_all
+  end
+end
