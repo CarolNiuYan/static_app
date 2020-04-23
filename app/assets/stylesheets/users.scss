@@ -1,3 +1,35 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#display_tutee_history, table {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  display: table;
+  //border-collapse: separate;
+  border-spacing: 10px;
+  border-color: #bbb;
+  color: #bbb;
+  width: 80%;
+  align: center;
+  border: 1px #bbb;
+  background-color: #000;
+}
+#display_tutee_history, td, th {
+  border: 1px solid #bbb;
+  text-align: center;
+  padding: 8px;
+}
+h2.tutee_summary {
+  font: italic 27px/30px bold arial;
+}
+
+
+
+
+
+
+
+
+
+

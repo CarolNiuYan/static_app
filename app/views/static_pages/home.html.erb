@@ -1,12 +1,12 @@
 <div class="center jumbotron">
   <h1>Welcome to Grinnell Language Lab</h1>
 
-  <%= image_tag("#{@random_image}", alt:"Rails logo")%>
-  <h2> <%= "#{@random_translation}"%></h2>
-  <p> Wise Chinese Proverb of the day: <%= "#{@random_sentence}"%></p>    
-
-  <%= link_to "Tutor Log In", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= image_tag("G_logo.png", :alt => "logo feed", :size => "260x250", :align => "middle")%>
+  <br><br>
+  <div class="btn-group", style:{padding-top: 25px;}>
+    <%= link_to "Tutee Log In", signup_path, class: "btn btn-lg btn-primary", :align => "middle" %>
+    <%= link_to "Tutor Log In", signup_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Professor Log In", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-  'http://rubyonrails.org/' %>
